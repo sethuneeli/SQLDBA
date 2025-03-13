@@ -1,0 +1,2 @@
+# SQLDBA
+Sethu queries
