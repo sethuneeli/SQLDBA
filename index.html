@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HGI | Consulting & IT Software Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">HGI<span class="dot">.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#testimonials">Clients</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#services" onclick="closeMobile()">Services</a></li>
+        <li><a href="#about" onclick="closeMobile()">About</a></li>
+        <li><a href="#solutions" onclick="closeMobile()">Solutions</a></li>
+        <li><a href="#testimonials" onclick="closeMobile()">Clients</a></li>
+        <li><a href="#contact" onclick="closeMobile()">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">Consulting &amp; IT Solutions</span>
+      <h1>Transform Your Business<br />with <span class="gradient-text">Smart Technology</span></h1>
+      <p class="hero-sub">HGI delivers expert consulting and cutting-edge IT software solutions that drive growth, optimize operations, and future-proof your organization.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Get a Free Consultation</a>
+        <a href="#solutions" class="btn-outline">Explore Solutions</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span>200+</span><p>Projects Delivered</p></div>
+        <div class="stat"><span>98%</span><p>Client Satisfaction</p></div>
+        <div class="stat"><span>15+</span><p>Years Experience</p></div>
+        <div class="stat"><span>50+</span><p>Expert Consultants</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">What We Do</span>
+        <h2>Comprehensive IT &amp; Consulting Services</h2>
+        <p>End-to-end technology and advisory services tailored to your unique business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">&#128187;</div>
+          <h3>Software Development</h3>
+          <p>Custom enterprise software, web platforms, and mobile applications built to scale.</p>
+          <ul>
+            <li>Custom ERP &amp; CRM Systems</li>
+            <li>API Integration &amp; Microservices</li>
+            <li>Cloud-Native Applications</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="icon">&#9729;</div>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <p>Design, migration, and management of modern cloud environments for reliability and scale.</p>
+          <ul>
+            <li>AWS / Azure / GCP Migrations</li>
+            <li>DevOps &amp; CI/CD Pipelines</li>
+            <li>Infrastructure as Code</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="icon">&#128202;</div>
+          <h3>Data &amp; Analytics</h3>
+          <p>Turn raw data into actionable intelligence with modern BI and data engineering solutions.</p>
+          <ul>
+            <li>Data Warehousing &amp; Lakehouse</li>
+            <li>Business Intelligence Dashboards</li>
+            <li>SQL DBA &amp; Database Optimization</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="icon">&#128274;</div>
+          <h3>Cybersecurity</h3>
+          <p>Protect your digital assets with comprehensive security assessments and managed services.</p>
+          <ul>
+            <li>Penetration Testing</li>
+            <li>Security Compliance (SOC2, ISO)</li>
+            <li>Threat Detection &amp; Response</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="icon">&#129302;</div>
+          <h3>AI &amp; Automation</h3>
+          <p>Harness artificial intelligence to automate workflows and unlock new opportunities.</p>
+          <ul>
+            <li>Machine Learning Models</li>
+            <li>RPA &amp; Process Automation</li>
+            <li>LLM Integration &amp; AI Apps</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="icon">&#128101;</div>
+          <h3>IT Consulting</h3>
+          <p>Strategic technology advisory that aligns IT investments with your business objectives.</p>
+          <ul>
+            <li>Digital Transformation Roadmaps</li>
+            <li>IT Strategy &amp; Governance</li>
+            <li>Vendor Selection &amp; Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <span class="label">Who We Are</span>
+        <h2>Your Trusted Technology Partner</h2>
+        <p>HGI is a full-service IT consulting and software firm with over 15 years of experience helping businesses across industries modernize their technology stack and accelerate growth.</p>
+        <p>Our team of certified architects, developers, and consultants combines deep technical expertise with real-world business acumen — delivering solutions that are not only technically sound but strategically impactful.</p>
+        <div class="about-features">
+          <div class="af">&#10003; Certified cloud architects &amp; security professionals</div>
+          <div class="af">&#10003; Agile delivery with transparent project management</div>
+          <div class="af">&#10003; 24/7 support &amp; managed services</div>
+          <div class="af">&#10003; Industry expertise: Finance, Healthcare, Retail, Gov</div>
+        </div>
+        <a href="#contact" class="btn-primary">Learn More About Us</a>
+      </div>
+      <div class="about-visual">
+        <div class="about-card ac1">
+          <div class="ac-icon">&#127919;</div>
+          <h4>Mission-Driven</h4>
+          <p>We exist to make technology accessible and impactful for every client.</p>
+        </div>
+        <div class="about-card ac2">
+          <div class="ac-icon">&#128640;</div>
+          <h4>Innovation First</h4>
+          <p>Staying ahead of the curve so your business always has a competitive edge.</p>
+        </div>
+        <div class="about-card ac3">
+          <div class="ac-icon">&#129309;</div>
+          <h4>Partnership Model</h4>
+          <p>We embed with your team for true collaboration, not just delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-header light">
+        <span class="label">Our Products</span>
+        <h2>Ready-to-Deploy Software Solutions</h2>
+        <p>Accelerate your digital transformation with our proven software products.</p>
+      </div>
+      <div class="solutions-grid">
+        <div class="sol-card">
+          <div class="sol-icon">&#128203;</div>
+          <h3>HGI DataSuite</h3>
+          <p>Enterprise-grade SQL database management, monitoring, and optimization platform for DBAs and data teams.</p>
+          <a href="#contact" class="sol-link">Request Demo &rarr;</a>
+        </div>
+        <div class="sol-card featured">
+          <div class="sol-badge">Most Popular</div>
+          <div class="sol-icon">&#127760;</div>
+          <h3>HGI CloudOps</h3>
+          <p>Unified cloud management portal with cost optimization, security posture, and automated compliance reporting.</p>
+          <a href="#contact" class="sol-link">Request Demo &rarr;</a>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon">&#128200;</div>
+          <h3>HGI InsightIQ</h3>
+          <p>Self-service business intelligence and analytics platform that connects to any data source in minutes.</p>
+          <a href="#contact" class="sol-link">Request Demo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">How We Work</span>
+        <h2>Our Proven Engagement Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Discovery</h3>
+          <p>We audit your current systems, goals, and pain points to fully understand your landscape.</p>
+        </div>
+        <div class="step-arrow">&#8594;</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Strategy</h3>
+          <p>Our architects design a tailored technology roadmap aligned to your business objectives.</p>
+        </div>
+        <div class="step-arrow">&#8594;</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Delivery</h3>
+          <p>Agile sprints, continuous delivery, and transparent communication keep projects on track.</p>
+        </div>
+        <div class="step-arrow">&#8594;</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Support</h3>
+          <p>Post-launch managed services, monitoring, and ongoing optimization ensure long-term success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Client Stories</span>
+        <h2>Trusted by Industry Leaders</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"HGI transformed our legacy data infrastructure into a modern cloud data warehouse. Query times dropped by 80% and our BI reports are now real-time."</p>
+          <div class="testi-author">
+            <div class="avatar">JM</div>
+            <div>
+              <strong>James Mitchell</strong>
+              <span>CTO, FinancialEdge Corp</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Their cybersecurity assessment uncovered critical vulnerabilities before they could be exploited. We're now SOC 2 Type II certified thanks to HGI."</p>
+          <div class="testi-author">
+            <div class="avatar">SR</div>
+            <div>
+              <strong>Sarah Reynolds</strong>
+              <span>CISO, MedPath Health Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The custom ERP system HGI built reduced our operational overhead by 40%. The team was professional, on-time, and truly understood our business."</p>
+          <div class="testi-author">
+            <div class="avatar">DK</div>
+            <div>
+              <strong>David Kim</strong>
+              <span>VP Operations, RetailNow Inc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="label">Get In Touch</span>
+        <h2>Let's Build Something Great Together</h2>
+        <p>Whether you need a quick consultation or a long-term technology partner, our team is ready to help.</p>
+        <div class="contact-details">
+          <div class="cd-item">
+            <span class="cd-icon">&#128205;</span>
+            <div><strong>Headquarters</strong><br />123 Tech Boulevard, Suite 400<br />Atlanta, GA 30301</div>
+          </div>
+          <div class="cd-item">
+            <span class="cd-icon">&#128222;</span>
+            <div><strong>Phone</strong><br />+1 (404) 555-0192</div>
+          </div>
+          <div class="cd-item">
+            <span class="cd-icon">&#128140;</span>
+            <div><strong>Email</strong><br />info@hgi-consulting.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your Company" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option>Software Development</option>
+              <option>Cloud &amp; Infrastructure</option>
+              <option>Data &amp; Analytics</option>
+              <option>Cybersecurity</option>
+              <option>AI &amp; Automation</option>
+              <option>IT Consulting</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message</button>
+          <div id="formSuccess" class="form-success" style="display:none;">&#10003; Thank you! We'll be in touch within 1 business day.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">HGI<span class="dot">.</span></a>
+        <p>Your trusted partner in IT consulting and enterprise software solutions.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="GitHub">GH</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Software Development</a></li>
+          <li><a href="#services">Cloud &amp; Infrastructure</a></li>
+          <li><a href="#services">Data &amp; Analytics</a></li>
+          <li><a href="#services">Cybersecurity</a></li>
+          <li><a href="#services">AI &amp; Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About HGI</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#testimonials">Clients</a></li>
+          <li><a href="#contact">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Whitepapers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 HGI Consulting &amp; IT Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
